@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff6b35;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  background-color: #333;
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Hero Section */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("/assets/images/Default_Looking_for_a_new_recipe_to_impress_your_dinner_guests_0.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(30) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Heading Section */
+.heading-section {
+  background-color: #000;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.heading-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.heading-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .heading-section h1 {
+    font-size: 48px;
+  }
+  .heading-section p {
+    font-size: 20px;
+  }
+}
+
+/* Main Section */
+
+.main-section {
+  padding: 50px 20px;
+}
+
+.recipe-card {
+  /* background-color: #FF6B35;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; */
+
+  display: flex; /* Display as flex container */
+  flex-direction: column;
+  background-color: #ff6b35;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.recipe-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  order: 1;
+  font-weight: bold;
+}
+
+.recipe-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  order: 2;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .main-section {
+    padding: 50px;
+  }
+
+  .recipe-card {
+    flex-basis: calc(50% - 40px);
+    margin-right: 20px;
+  }
+
+  .recipe-card:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .recipe-card {
+    flex-basis: calc(33.33% - 40px);
+  }
+}
+
+.just {
+  text-align: center;
+}
+
+/* Testimonial Section */
+
+.testimonial-section {
+  background-color: #333;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 20px 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #444;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.testimonial-card .author {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.testimonial-image {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .testimonial-section {
+    padding: 100px 20px;
+  }
+}
+
+/* Footer Section */
+.footer {
+  background-color: #ff6b35;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  margin-right: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #ddd;
+}
+
+.feedback-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.feedback-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.feedback-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    justify-content: space-between;
+  }
+}
