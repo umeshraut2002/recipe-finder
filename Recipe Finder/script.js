@@ -1,3 +1,4 @@
+// javascript file 
 const searchInput = document.querySelector(".search-input");
 const searchBtn = document.querySelector(".search-btn");
 const recipeContainer = document.querySelector(".main-section");

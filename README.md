@@ -41,4 +41,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 Recipe Finder: 
 
 ## Contact
-For any inquiries or feedback, please contact uraut56666@gmail.com
+For any inquiries or feedback, please contact uraut6044@gmail.com
