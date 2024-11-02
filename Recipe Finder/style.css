@@ -83,7 +83,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url("/assets/images/Default_Looking_for_a_new_recipe_to_impress_your_dinner_guests_0.jpg");
+  background-image: url("/");
   background-size: cover;
   background-position: center;
   display: flex;
