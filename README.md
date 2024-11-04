@@ -3,6 +3,15 @@
 ## Description
 Recipe Finder is a web application that allows users to search for recipes based on ingredients, dietary preferences, or cuisine types. It utilizes the Edmam Recipe search API to fetch recipe data and provides users with detailed instructions, ingredients list, and nutritional information for each recipe.
 
+## Fonts
+- Nunito-sans 
+- sans-serif
+
+## Color Codes 
+- pure white text - #fff and #ffffff
+- theme color - #ff6b35
+- background color - #222
+
 ## Features
 - Search for recipes by ingredients, keywords, or cuisine types
 - Filter recipes based on dietary preferences (e.g., vegetarian, gluten-free)

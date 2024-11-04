@@ -1,17 +1,9 @@
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
+/* this is for the global style */
 
-/* navbar */
-
-/* css file */
 * {
   box-sizing: border-box;
 }
 
-/* Global styles */
 body {
   margin: 0;
   padding: 0;
@@ -20,7 +12,7 @@ body {
   color: #fff;
 }
 
-/* Navbar */
+/* style for navbar all sections */
 .navbar {
   background-color: #ff6b35;
   padding: 10px 20px;
@@ -75,6 +67,8 @@ body {
   background-color: #0056b3;
 }
 
+/* style for responsive header */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -86,21 +80,19 @@ body {
   }
 }
 
+/* style for main section log in form */
 
-/* body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+.main-content {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-} */
+    padding: 80px;
+}
 
 .login-container {
-    background-color: #1e1e1e;
-    border: 2px solid #ffffff;
+    background-color: #222;
+    border: 2px solid #fff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     padding: 40px;
@@ -109,7 +101,7 @@ body {
 }
 
 .title {
-    color: #ffffff;
+    color: #fff;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -134,7 +126,7 @@ body {
     margin-bottom: 8px;
     border: none;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff;
     font-size: 18px;
     padding: 10px;
     cursor: pointer;
@@ -147,10 +139,10 @@ body {
 
 .login-button a {
     text-decoration: none !important;
-    color: #ffffff;
+    color: #fff;
 }
 
-/* footer */
+/* style for the footer section */
 
 .footer {
   background-color: #ff6b35;
@@ -179,7 +171,7 @@ body {
 }
 
 .social-links a:hover {
-  color: #ddd;
+  color: #fff;
 }
 
 .feedback-form {
