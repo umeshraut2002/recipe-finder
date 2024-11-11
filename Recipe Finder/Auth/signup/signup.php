@@ -1,8 +1,9 @@
 <?php
-$num1 = 5;
-$num2 = 4;
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db_name = "db1";
 
-$sum = $num1 + $num2;
+$conn = new mysqli($servername, $username, $password, $db_name, 3306);
 
-echo"The sum of two number : $sum";
 ?>
